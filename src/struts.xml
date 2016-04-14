@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="utf8"/> 
+    <constant name="struts.objectFactory" value="spring" />
+	 <package name="article" extends="struts-default">
+	    <action name="articleAction" class="articleAction" method="getAll">
+	    <result name="success">/index.jsp</result>
+	    </action>
+	 </package>
+</struts>    
