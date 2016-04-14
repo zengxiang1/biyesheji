@@ -18,6 +18,7 @@ import com.zx.services.imp.ArticleService;
 
 @Component
 public class ArticleAction extends ActionSupport{
+	private Integer i;
 	private List<Article> list;
      public List<Article> getList() {
 		return list;
